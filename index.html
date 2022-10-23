@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raw weather app w/api</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <!-- 
+    https://youtu.be/QGzgE7jWDxk?t=502 <<<< Not done yet.
+
+   -->
+  <body>
+    <section class="weather-app">
+      <div class="container">
+        <h3 class="brand">The weather app</h3>
+        <div>
+          <h1 class="temp">14&#176;</h1>
+          <div class="city-time">
+            <h1 class="name">Maryland, USA</h1>
+            <small class="time">1:00 AM - <span class="date">Wednesday Oct 19</span></small>
+          </div>
+          <div class="weather">
+            <img
+              class="icon"
+              width="50"
+              height="50"
+              src="https://img.icons8.com/emoji/48/000000/sun-emoji.png"
+            />
+            <span class="status">Sunny</span>
+          </div>
+        </div>
+      </div>
+      <!-- main section end -->
+      <section class="panel">
+        <form id="location-input">
+          <input type="search" placeholder="Search Location..." class="search" />
+          <button type="submit" class="submit"><ion-icon name="search-outline"></ion-icon></button>
+        </form>
+        <ul class="cities">
+          <li class="city">New York</li>
+          <li class="city">California</li>
+          <li class="city">Dhaka</li>
+          <li class="city">Turkish</li>
+          <li class="city">Tokyo</li>
+        </ul>
+        <ul class="details">
+          <h4>Weather Details</h4>
+          <li><span>Cloudy</span><span class="cloud"> 89%</span></li>
+          <li><span>Humidity</span><span class="humidity"> 64%</span></li>
+          <li><span>Wind</span><span class="wind"> 8 km/h</span></li>
+        </ul>
+      </section>
+    </section>
+    <!-- panel section end -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
+</html>
